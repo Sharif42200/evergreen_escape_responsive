@@ -1,0 +1,243 @@
+/* Mulish font */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Mulish", sans-serif;
+    box-sizing: border-box;
+}
+
+/* shared styles */
+:root{
+    --primary-color: rgb(50,151,9);
+    --secondary-color: rgb(255, 255, 255);
+    --title-color: rgb(19, 19, 24);
+    --paragraph-color: rgba(19, 19, 24, 0.7);
+}
+.container{
+    max-width: 1140px;
+    width: 75%;
+    margin: 0 auto;
+}
+.primary-btn{
+    padding: 16px 32px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+.primary-btn:hover{
+    background-color: black;
+}
+.primary-title{
+    font-weight: 800;
+    font-size: 2.3rem;
+    color: var(--title-color);
+}
+.primary-paragraph{
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+.secondary-paragraph{
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--paragraph-color);
+}
+
+
+
+
+/* ------------- */
+/* navbar styles */
+/* ------------- */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 30px 0;
+    background-color: #0C0404;
+    border-radius: 10px;
+}
+.navbar .logo{
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.navbar .logo img{
+    width: 50px;
+    height: 40px;
+}
+.logo h2{
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 2rem;
+}
+.bar, a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-right: 20px;
+    color: var(--secondary-color);
+}
+
+
+/* ------------- */
+/* navbar styles end */
+/* ------------- */
+
+
+
+
+
+/* ------------- */
+/* banner styles */
+/* ------------- */
+#banner-part{
+    margin-top: 70px;
+}
+.banner{
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('../Images/banner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-size: cover;
+    border-radius: 10px;
+}
+.banner>h1{
+    font-weight: 800;
+    font-size: 4rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+.banner > p{
+    margin-bottom: 30px;
+}
+.booking{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    /* background: rgba(255, 255, 255, 0.3);
+    padding: 16px 0; */
+    /* border-radius: 8px; */
+}
+.booking .input-style{
+    display: flex;
+    gap: 20px;
+    padding: 16px 16px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+}
+.booking .input-style div input{
+    border: none;
+    outline: none;
+    padding: 16px;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(19, 19, 24, 0.5);
+}
+
+/* ------------- */
+/* banner styles end */
+/* ------------- */
+
+
+
+
+
+
+/* ------------- */
+/* tour section styles */
+/* ------------- */
+#tour{
+    margin-top: 70px;
+}
+.tours-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+/* .tours-section .tours-content h2{
+    margin-bottom: 24px;
+} */
+.tours-section .tours-content p{
+    margin: 30px 0;
+}
+.tours-section .tours-content ul{
+    margin-left: 20px;
+}
+.tours-section .tours-content ul > li{
+    margin-bottom: 16px;
+}
+.tours-img img{
+    width: 100%;
+}
+/* ------------- */
+/* tour section styles end */
+/* ------------- */
+
+
+
+
+
+
+
+
+
+
+/* ------------- */
+/* responsive styles */
+/* mobile devices */
+/* ------------- */
+@media screen and (max-width: 600px) {
+    /* nav styles */
+    .navbar .logo{
+        margin-right: 0;
+        padding-left: 0;
+    }
+    .logo h2{
+        font-size: 1rem;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .bar, a{
+        flex-direction: column;
+        margin-right: 0px;
+    }
+
+
+    /* banner styles */
+    .banner>h1{
+        font-size: 2rem;
+    }
+    .booking{
+        flex-direction: column;
+    }
+    .booking .input-style{
+        flex-direction: column;
+    }
+    .booking .input-style div> button{
+        width: 100%;
+    }
+
+
+    /* tours section styles */
+    .tours-section{
+        flex-direction: column;
+    }
+}
