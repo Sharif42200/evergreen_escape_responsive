@@ -313,35 +313,24 @@ a {
 /* ------------- */
 /* sponsors styles */
 /* ------------- */
-#sponsorship-part {
+#sponsorship{
     margin-top: 100px;
 }
-#sponsorship-title{
-    margin-bottom: 40px;
+.sponsorship-title{
+    margin-bottom: 60px;
     text-align: center;
 }
-.hr {
-    margin-bottom: 40px;
-}
-
-.sponsorship {
+.sponsor-company{
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 50px;
-    align-items: center;
+    grid-template-columns: repeat(6 , 1fr);
     justify-content: space-between;
-    margin-bottom: 40px;
+    align-items: center;
+    gap: 50px;
     
 }
-.sponsorship img{
+/* .sponsor-company img{
     opacity: 0.5;
-    transition: all 1.5s ease;
-    cursor: pointer;
-}
-.sponsorship img:hover{
-    transform: scale(1.5);
-    opacity: 1;
-}
+} */
 /* ------------- */
 /* sponsors styles end */
 /* ------------- */
@@ -416,7 +405,7 @@ a {
 
 
     /* sponsors styles */
-    .sponsorship {
+    .sponsor-company{
         grid-template-columns: repeat(2, 1fr);
     }
 }
