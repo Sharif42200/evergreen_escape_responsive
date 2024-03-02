@@ -313,7 +313,7 @@ a {
 /* ------------- */
 /* sponsors styles */
 /* ------------- */
-#sponsors-part {
+#sponsorship-part {
     margin-top: 100px;
 }
 #sponsorship-title{
@@ -324,7 +324,7 @@ a {
     margin-bottom: 40px;
 }
 
-.sponsors {
+.sponsorship {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 50px;
@@ -333,12 +333,12 @@ a {
     margin-bottom: 40px;
     
 }
-.sponsors img{
+.sponsorship img{
     opacity: 0.5;
     transition: all 1.5s ease;
     cursor: pointer;
 }
-.sponsors img:hover{
+.sponsorship img:hover{
     transform: scale(1.5);
     opacity: 1;
 }
@@ -416,7 +416,7 @@ a {
 
 
     /* sponsors styles */
-    .sponsors {
+    .sponsorship {
         grid-template-columns: repeat(2, 1fr);
     }
 }
