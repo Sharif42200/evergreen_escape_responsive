@@ -317,8 +317,11 @@ a {
     margin-top: 100px;
 }
 .sponsorship-title{
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     text-align: center;
+}
+.sponsorship-title h2{
+    margin-bottom: 40px;
 }
 .sponsor-company{
     display: grid;
@@ -326,11 +329,14 @@ a {
     justify-content: space-between;
     align-items: center;
     gap: 50px;
-    
 }
-/* .sponsor-company img{
-    opacity: 0.5;
-} */
+.sponsor-company img{
+    cursor: pointer;
+    transition: all 1s ease-in;
+}
+.sponsor-company img:hover{
+    transform: scale(1.5);
+}
 /* ------------- */
 /* sponsors styles end */
 /* ------------- */
