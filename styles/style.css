@@ -68,24 +68,26 @@
 /* ------------- */
 /* navbar styles */
 /* ------------- */
-
+header{
+    background-color: #0C0404;
+}
 .navbar {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding: 30px 0;
-    background-color: #0C0404;
     border-radius: 10px;
 }
 
-.navbar .logo {
+.logo {
     margin-right: auto;
     display: flex;
     align-items: center;
-    padding-left: 10px;
+    justify-content: center;
+    /* padding-left: 10px; */
 }
 
-.navbar .logo img {
+.logo img {
     width: 50px;
     height: 40px;
 }
@@ -346,6 +348,98 @@ a {
 
 
 
+/* ------------- */
+/* newsletter styles */
+/* ------------- */
+#newsletter{
+    margin-top: 100px;
+}
+.newsletter-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.newsletter-box{
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 40px;
+    max-width: 380px;
+}
+.newsletter-box *{
+    margin-bottom: 16px;
+}
+.newsletter-box form input{
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    color: var(--paragraph-color);
+    background: rgba(19, 19, 24, 0.05);
+}
+.newsletter-box form *{
+    width: 100%;
+}
+.newsletter-img img{
+    width: 100%;
+}
+.newsletter-img{
+    position: relative;
+}
+.newsletter-img div {
+    max-width: 300px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: rotate(-30deg);
+}
+.newsletter-img div .save-up{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--secondary-color);
+    text-align: center;
+}
+.offer{
+    font-weight: 800;
+    font-size: 2rem;
+}
+/* ------------- */
+/* newsletter styles end */
+/* ------------- */
+
+
+
+
+
+/* ------------- */
+/* footer styles */
+/* ------------- */
+footer{
+    margin-top: 100px;
+    background-color: #0C0404;
+    padding: 100px;
+}
+.footer-details{
+    /* max-width: 600px;
+    margin: 0 auto; */
+    text-align: center;
+}
+.icons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+/* ------------- */
+/* footer styles end */
+/* ------------- */
+
+
+
+
+
+
 
 /* ------------- */
 /* responsive styles */
@@ -413,5 +507,18 @@ a {
     /* sponsors styles */
     .sponsor-company{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* newsletter styles */
+    .newsletter-part{
+        flex-direction: column;
+    }
+    .newsletter-img div{
+        top: 30%;
+        left: 40%;
+    }
+    .offer{
+        font-size: 1rem;
     }
 }
