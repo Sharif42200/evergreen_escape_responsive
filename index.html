@@ -13,19 +13,22 @@
 <body>
     <header>
         <!-- nav part -->
-        <section class="container">
+        <section >
             <nav class="navbar">
                 <div class="logo">
                     <img src="Images/logo/logo.png" alt="">
                     <h2> <span style="color: #FFFFFF;">Evergreen</span> Escape</h2>
                 </div>
-                <ul class="bar">
+                <ul class="bar" id="hamList">
                     <li> <a style="color: var(--primary-color);" href="">Home</a> </li>
                     <li> <a href="">Packages</a> </li>
                     <li> <a href="">Testimonial</a> </li>
                     <li> <a href="">Blog</a> </li>
-                    <li> <a href="">Contact</a> </li>
+                    <li> <a style="margin-right: 0;" href="">Contact</a> </li>
                 </ul>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+                </div>
             </nav>
         </section>
         <!-- nav part end -->
@@ -265,7 +268,7 @@
                 <img src="Images/logo/logo.png" alt="">
                 <h2> <span style="color: #FFFFFF;">Evergreen</span> Escape</h2>
             </div>
-            <p class="secondary-paragraph" style="color: #FFFFFF; margin-bottom: 30px;">
+            <p class="secondary-paragraph" style="color: #FFFFFF; margin-bottom: 30px; text-align: center;">
                 Travel exposes us to different cultures and ancient traditions and through these authentic encounters.
             </p>
             <div class="icons">
@@ -275,13 +278,31 @@
                 <a href=""><i class="fa-brands fa-youtube"></i></a>
             </div>
             <hr style="margin: 30px;">
-            <p class="secondary-paragraph" style="color: #FFFFFF;">
+            <p class="secondary-paragraph" style="color: #FFFFFF; text-align: center;">
                 2017, All Rights Reserved.
             </p>
 
         </div>
     </footer>
     <!-- footer section end -->
+
+
+
+    <!-- hamburger menu -->
+    <script>
+        let hamList = document.getElementById("hamList")
+        hamList.style.maxHeight = ("0px");
+
+        function toggleMenu(){
+            if(hamList.style.maxHeight == ("0px"))
+            {
+                hamList.style.maxHeight = ("300px")
+            }
+            else{
+                hamList.style.maxHeight = ("0px")
+            }
+        }
+    </script>
 </body>
 
 </html>
